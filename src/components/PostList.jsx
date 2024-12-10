@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { Pagination } from "./Pagination";
-import { Vote } from "./Vote";
-import { db } from "@/db";
-import { POSTS_PER_PAGE } from "@/config";
+import Link from 'next/link';
+import { Pagination } from './Pagination';
+import { Vote } from './Vote';
+import { db } from '@/db';
+import { POSTS_PER_PAGE } from '@/config';
 
 export async function PostList({ currentPage = 1 }) {
   const { rows: posts } =
